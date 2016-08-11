@@ -28,7 +28,7 @@ with( data, plot(DateTime, as.numeric(sub(",",".",Voltage)), type="l", xlab = "d
 with( data, plot(DateTime, as.numeric(sub(",",".",Sub_metering_1)), type="l", xlab = "", ylab = "Energy sub metering"))
 with( data, points(DateTime, as.numeric(sub(",",".",Sub_metering_2)), col="red" ,type="l", xlab = "", ylab = "Energy sub metering"))
 with( data, points(DateTime, as.numeric(sub(",",".",Sub_metering_3)), col="blue" ,type="l", xlab = "", ylab = "Energy sub metering"))
-legend("topright", lty=1, lwd=2, col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty=1, lwd=2, col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),bty="n", cex=.75)
 
 # Plot 4:
 plot(data$DateTime,data$Global_reactive_power,type='l',xlab="datetime",ylab="Global_reactive_power")
